@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Library</title>
+</head>
+<body>
+    <button class="add" onclick="addBookBtn()">Add Book</button>
+    <div class="overly">
+        <form onsubmit="event.preventDefault()" class="window">
+            <p onclick="closeOverly()">X</p>
+            <input name="title" type="text" class="title" placeholder="Title" required>
+            <input name="author" type="text" class="author" placeholder="Author" required>
+            <input name="pages" type="number" class="pages" placeholder="Pages" required>
+            <label for="cb">Did you read it<input id="cb" type="checkbox"></label>
+            <button type="button" class="add-to-Library" onclick="addToLibrary()">Add To Library</button>
+        </form>
+    </div>
+    <hr>
+    <div class="container">
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
